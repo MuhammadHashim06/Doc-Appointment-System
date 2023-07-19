@@ -1,0 +1,116 @@
+.box1
+{
+
+    height: auto;
+    width: 25%;
+    background-color:aliceblue;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px black;
+}
+.innerbox
+{
+    margin: 2%;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px black;
+    width: 100%;
+}
+.outer
+{
+    display: flex;
+}
+.innerbox table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+table thead
+{
+    background-color: #006fff;
+
+}
+thead th , tbody td
+{
+    padding: 1.5%;
+}
+tbody
+{
+    text-align: center;
+    background-color: aliceblue;
+}
+#toggle
+{
+    background-color: #2d2d2d;
+    border: none;
+    padding: .5%;
+    border-radius: 7.5px;
+    display: none;
+}
+
+#toggle span
+{
+    border-radius: 5px;
+    width: 50px;
+    height: 5px;
+    background-color: #006fff;    
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and ( max-width:768px) {
+   
+    .navbar
+    {
+     flex-wrap: wrap;
+    }
+     .box1{
+         margin: 0%;
+         flex-direction: column;   }
+    .box1 img
+    {
+     display: none;
+    }
+    .services
+    {
+ flex-direction: column;   }
+ .description
+ {
+     margin: 0;
+      padding: 5%;
+ width: auto;}
+ 
+ .links,.navbar
+ {
+     flex-direction: column;
+ }
+ .links {
+     margin-left: 0;
+     display: none;
+   }
+ form
+ {
+     width: auto;
+ }
+ .outer
+ {
+    flex-direction: column;
+    padding: 3%;
+ }
+ .box1
+ {
+    /* margin: 2%; */
+    display: flex;
+    width: auto;
+ }
+ .innerbox
+ {
+    width: auto;
+ }
+ #toggle
+ {
+    display: block;
+ }
+ }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="./Images/pngaaa.com-5059709.png">
+    <link rel="stylesheet" href="./CSS/appointment.css">
+    <title>My Appoinment</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-brand">
+        <a href="./index.html"><h1>Doctor Appointment System</h1></a>
+    </div>
+    <button id="toggle" onclick="toggle(event)"><span></span>
+        <span ></span>
+        <span></span></button>
+        <div class="links" id="link">
+            <a href="./home.html" >Book Appointment</a>
+            <a href="./Myappointment.html"class="active" >My Appointment</a>
+            <a href="./Contact.html">Contact Us</a>
+        </div>
+        <h3 id="welcome" style="color: #006fff;"></h3>
+    </div>
+    </nav>
+
+
+<div class="outer">
+    <div class="box1">
+        <h1 id="name">Account Name</h1>
+        <h3 id="tel">Phone number</h3>
+    </div>
+    <div class="innerbox">
+        <h1 style="text-align: center;">Your Appointments</h1>
+
+        <table>
+            <thead>
+                <th>Paitent</th>
+                <th>Age</th>
+                <th>Date</th>
+                <th>Time</th>
+            </thead>
+            <tbody id="body">
+
+            </tbody>
+        </table>
+        
+    </div>
+</div>
+
+
+
+
+
+    <footer>        
+        <div class="services">
+            <div class="description">
+                <h2>Our Mission</h2>
+                <p>It is made in 2021. We have experince doctors and Skillful medical Staff.
+                    Our Mission is to Provide you a seamless and excellent experience
+                </p>
+            </div>
+            <ul>
+                <li><h3>Our Services</h3></li>
+                <li>Complete Check-up</li>
+                <li>Support Team</li>
+                <li>Career</li>
+                <li>Specialist</li>
+                <li>How it work</li>
+            </ul>
+            <ul>
+                <li><h3>Company</h3></li>
+                <li>About Us</li>
+                <li>Help Center</li>
+                <li>Privacy Policy</li>
+                <li>Term and Condition</li>
+            </ul>
+            <ul>
+                <li><h3>Department</h3></li>
+                <li>Neurosurgery</li>
+                <li>Cardiology</li>
+                <li>Therapy</li>
+                <li>Radiology</li>
+            </ul>
+        </div>
+        <hr width="75%">
+        <p style="font-size:larger; margin:2%; text-align:center">Copyright &copy; Doctor Appoinment System 2021</p>
+    </footer>
+<script src="./JS/appointment.js"></script>
+</body>
+</html>

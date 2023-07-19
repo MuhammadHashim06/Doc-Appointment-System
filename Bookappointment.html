@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/Book.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="./Images/pngaaa.com-5059709.png">
+    <title>Booking Appoinment</title>
+</head>
+<body>
+    <div id="form">
+        <form action="Bookappointment.html">
+            <h1>Paitent Details</h1>
+            <br>
+            <label for="name">Paitent Name</label>
+            <br>
+            <input type="text" id="name">
+            <br>
+            <label for="age">Age</label>
+            <br>
+            <input type="number" id="age"></form>
+            <h4 id="seldate">Date : </h4>
+            <h4 id="selslot">Slot : </h4>
+            <input type="checkbox" name="Check" id="checkbox" placeholder="Confirm Appointment">
+            <label for="Check">Check Details</label>
+            <br>
+            <button id="cancel" style="background-color: lightgray;">Cancel</button>
+            <button type="submit" id="confirm">Confirm</button>
+    </div>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-brand">
+        <a href="./home.html"><h1>Doctor Appointment System</h1></a>
+    </div>
+    <button id="toggle" onclick="toggle(event)"><span></span>
+        <span ></span>
+        <span></span></button>
+        <div class="links" id="link">
+            <a href="#booking" class="active">Book Appointment</a>
+            <a href="./Myappointment.html" >My Appointment</a>
+            <a href="./Contact.html">Contact Us</a>
+        </div>
+        <h3 id="welcome" style="color: #006fff;"></h3>
+    </div>
+    </nav>
+
+    
+<div class="box1" id="appointmentbox">
+    <h1 style="color: #006fff;">Book Your Appointment</h1>
+    <form>
+        <label for="time">Choose one to get Started</label><br>
+        <select name="time" id="time">
+            <option value="Morning">Morning</option>
+            <option value="Evening">Evening</option>
+        </select>
+        <button onclick="show(event)">Submit</button>
+    </form>
+</div>
+
+<div id="Morning">
+    <h1 >Morning Slots 9AM - 12:30 PM</h1>
+    <div class="slot1" onclick="selected(this)"><h3>9AM - 9:30AM</h3> <button>Select</button></div>
+    <div class="slot1" onclick="selected(this)"><h3>9:30AM - 10AM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>10AM - 10:30AM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>10:30AM - 11AM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>11AM - 11:30AM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>11:30AM - 12PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>12PM - 12:30PM</h3><button>Select</button> </div>
+</div>
+<div id="Evening">
+    <h1 >Evening Slots 7PM - 11:30 PM</h1>
+    <div class="slot1" onclick="selected(this)"><h3>7PM - 7:30PM</h3> <button>Select</button></div>
+    <div class="slot1" onclick="selected(this)"><h3>7:30PM - 8PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>8PM - 8:30PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>8:30PM - 9PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>9PM - 9:30PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>9:30PM - 10PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>10PM - 10:30PM</h3><button>Select</button> </div>
+    <div class="slot1"onclick="selected(this)"><h3>10:30PM - 11PM</h3><button>Select</button> </div>
+    <div class="slot1" onclick="selected(this)"><h3>11PM - 11:30PM</h3><button>Select</button> </div>
+</div>
+
+    <footer>        
+        <div class="services">
+            <div class="description">
+                <h2>Our Mission</h2>
+                <p>It is made in 2021. We have experince doctors and Skillful medical Staff.
+                    Our Mission is to Provide you a seamless and excellent experience
+                </p>
+            </div>
+            <ul>
+                <li><h3>Our Services</h3></li>
+                <li>Complete Check-up</li>
+                <li>Support Team</li>
+                <li>Career</li>
+                <li>Specialist</li>
+                <li>How it work</li>
+            </ul>
+            <ul>
+                <li><h3>Company</h3></li>
+                <li>About Us</li>
+                <li>Help Center</li>
+                <li>Privacy Policy</li>
+                <li>Term and Condition</li>
+            </ul>
+            <ul>
+                <li><h3>Department</h3></li>
+                <li>Neurosurgery</li>
+                <li>Cardiology</li>
+                <li>Therapy</li>
+                <li>Radiology</li>
+            </ul>
+        </div>
+        <hr width="75%">
+        <p style="font-size:larger; margin:2%; text-align:center">Copyright &copy; Doctor Appoinment System 2021</p>
+    </footer>
+
+    <script src="./JS/Book.js"></script>
+</body>
+</html>

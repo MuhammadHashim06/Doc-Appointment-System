@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/header-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="./Images/pngaaa.com-5059709.png">
+    <link rel="stylesheet" href="./CSS/contact.css">
+    <title>Contact US</title>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="navbar-brand">
+        <a href="./home.html"><h1>Doctor Appointment System</h1></a>
+    </div>
+    <button id="toggle" onclick="toggle(event)"><span></span>
+        <span ></span>
+        <span></span></button>
+        <div class="links" id="link">
+            <a href="./home.html" >Book Appointment</a>
+            <a href="./Myappointment.html" >My Appointment</a>
+            <a href="./Contact.html" class="active">Contact Us</a>
+        </div>
+        <h3 id="welcome" style="color: #006fff;"></h3>
+    </div>
+    </nav>
+
+
+<div class="box1">
+    <h1 style="color:#006fff; width:100%; font-size: 75px; text-decoration:underline"><i class="fa-regular fa-envelope"></i>Contact Us</h1>
+<<<<<<< HEAD
+    <form action="./home.html" id="my-form">
+        <input type="email" id="email" autocomplete="off" placeholder="Enter an Valid Email Address">
+=======
+
+    <form action="/home.html" id="my-form">
+        <input type="email" id="email" placeholder="Enter an Valid Email Address" autocomplete="off">
+>>>>>>> 4eb076d25bd210a5054908ccdd77bd5107fb6b18
+<br>
+        <input type="text" id="name" placeholder="Your Name" autocomplete="off">
+<br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button type="submit" id="btn">Submit</button>
+        <br>
+    </form>
+</div>
+
+
+
+    <footer>        
+        <div class="services">
+            <div class="description">
+                <h2>Our Mission</h2>
+                <p>It is made in 2021. We have experince doctors and Skillful medical Staff.
+                    Our Mission is to Provide you a seamless and excellent experience
+                </p>
+            </div>
+            <ul>
+                <li><h3>Our Services</h3></li>
+                <li>Complete Check-up</li>
+                <li>Support Team</li>
+                <li>Career</li>
+                <li>Specialist</li>
+                <li>How it work</li>
+            </ul>
+            <ul>
+                <li><h3>Company</h3></li>
+                <li>About Us</li>
+                <li>Help Center</li>
+                <li>Privacy Policy</li>
+                <li>Term and Condition</li>
+            </ul>
+            <ul>
+                <li><h3>Department</h3></li>
+                <li>Neurosurgery</li>
+                <li>Cardiology</li>
+                <li>Therapy</li>
+                <li>Radiology</li>
+            </ul>
+        </div>
+        <hr width="75%">
+        <p style="font-size:larger; margin:2%; text-align:center">Copyright &copy; Doctor Appoinment System 2021</p>
+    </footer>
+    <script>
+
+            function toggle(event)
+            {
+              event.preventDefault();
+                  var links=document.getElementById("link");
+              if(links.style.display=="none")
+              {
+                links.style.display="block";
+              }else
+              {
+                links.style.display="none";
+              }
+            }
+        var UserID = JSON.parse(sessionStorage.getItem("currentlogin"));
+
+        var User = JSON.parse(localStorage.getItem("Accounts"));
+var currentuser= User[UserID];
+document.getElementById("welcome").innerHTML=`<i class="fa-solid fa-user"></i> ${currentuser.name}`;
+    
+const formbtn = document.getElementById("btn")
+
+// Add an event listener to the form submission
+formbtn.addEventListener('C', (event)=> {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Handle the form data (You can use AJAX to send data to the server if needed)
+    const email = document.getElementById('emailInput').value;
+    const name = document.getElementById('nameInput').value;
+    const message = document.getElementById('messageInput').value;
+
+    // You can do further processing or validation here if required
+
+    // Redirect the user to another page after the form processing is complete
+    window.location.href = '/home.html';
+});
+</script>
+</body>
+</html>
+
+<!-- <form action="/home.html">
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter a Valid Email Address" required>
+        <br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your Name" required>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Message</legend>
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    </fieldset>
+    <br>
+
+    <button type="submit">Submit</button>
+</form> -->
