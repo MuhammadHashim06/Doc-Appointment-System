@@ -50,8 +50,15 @@ var Dates=[
     },{
         Slot:"8PM - 8:30PM",
         flag:false
+    }
+    ,{
+        Slot:"8:30PM - 8PM",
+        flag:false
     },{
         Slot:"9PM - 9:30PM",
+        flag:false
+    },{
+        Slot:"9:30PM - 10PM",
         flag:false
     },{
         Slot:"10PM - 10:30PM",
